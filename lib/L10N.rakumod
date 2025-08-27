@@ -18,7 +18,8 @@ my sub mapify(%hash) {
 # Produce all words on non-commented lines of given IO as a Slip
 my sub io2words(IO::Path:D $io) {
     $io.lines.map: {
-        .split(/ \s+ /, 2, :skip-empty).Slip unless .starts-with("#")
+        .split(/ \s* '#' /,2).head.split(/ \s+ /, 2, :skip-empty).Slip
+          unless .starts-with("#")
     }
 }
 
