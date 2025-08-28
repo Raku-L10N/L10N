@@ -1,6 +1,8 @@
 Revision history for L10N
 
 {{$NEXT}}
+
+0.1.7  2025-08-28T12:56:09+02:00
     - Allow for comments on the same line, after "#"
 
 0.1.6  2025-08-13T21:41:46+02:00

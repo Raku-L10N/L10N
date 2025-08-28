@@ -359,7 +359,7 @@ my constant %sub-groups = <core named>.map({ $_ => 1 });
 # The class on which only class methods can be called.  Why not export as
 # subroutines you say?  Simply, to prevent unneeded poisonin of namespaces
 
-unit class L10N:ver<0.1.6>:auth<zef:l10n> is repr('Uninstantiable');
+unit class L10N:ver<0.1.7>:auth<zef:l10n> is repr('Uninstantiable');
 
 #- RUNTIME METHODS -------------------------------------------------------------
 method role-for-localization(Str:D $localization) {
