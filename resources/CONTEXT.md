@@ -270,6 +270,9 @@ Sub/Method names that are part of the Raku core.
 #### core-abs
 - https://docs.raku.org/type/Cool#routine_abs
 
+#### core-actions
+- https://docs.raku.org/type/Match#method_actions
+
 #### core-all
 - https://docs.raku.org/type/Any#method_all
 
@@ -327,11 +330,17 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 ### core-B
 
+#### core-backtrace
+- https://docs.raku.org/type/Exception#method_backtrace
+
 #### core-bag
 - https://docs.raku.org/type/Bag
 
 #### core-bail-out
 https://docs.raku.org/type/Test#sub_bail-out
+
+#### core-batch
+- https://docs.raku.org/routine/batch
 
 #### core-bless
 - https://docs.raku.org/type/Mu#method_bless
@@ -349,6 +358,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 #### core-can-ok
 - https://docs.raku.org/type/Test#sub_can-ok
+
+#### core-caps
+- https://docs.raku.org/type/Match#method_caps
 
 #### core-cas
 - https://docs.raku.org/type/atomicint#sub_cas
@@ -384,8 +396,14 @@ https://docs.raku.org/type/Test#sub_bail-out
 #### core-chrs
 - https://docs.raku.org/type/Cool#routine_chrs
 
+#### core-chunks
+- https://docs.raku.org/type/Match#method_chunks
+
 #### core-classify
 - https://docs.raku.org/type/Any#routine_classify
+
+#### core-clone
+- https://docs.raku.org/routine/clone
 
 #### core-close
 - https://docs.raku.org/type/IO/Handle#routine_close
@@ -447,6 +465,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 ### core-E
 
+#### core-eager
+- https://docs.raku.org/routine/eager
+
 #### core-elems
 - https://docs.raku.org/type/Any#method_elems
 - https://docs.raku.org/type/List#routine_elems
@@ -498,6 +519,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 - https://docs.raku.org/type/Any#method_flat
 - https://docs.raku.org/type/independent-routines#sub_flat
 
+#### core-flatmap
+- https://docs.raku.org/routine/flatmap
+
 #### core-flip
 - https://docs.raku.org/type/Str#routine_flip
 
@@ -506,6 +530,12 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 #### core-flunk
 - https://docs.raku.org/type/Test#sub_flunk
+
+#### core-fmt
+- https://docs.raku.org/routine/fmt
+
+#### core-from
+- https://docs.raku.org/routine/from
 
 #### core-full-barrier
 - https://docs.raku.org/type/Thread#sub_full-barrier
@@ -622,6 +652,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 ### core-M
 
+#### core-made
+- https://docs.raku.org/type/Match#routine_made
+
 #### core-make
 - https://docs.raku.org/type/Match#routine_make
 
@@ -633,6 +666,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 #### core-max
 - https://docs.raku.org/type/Any#routine_max
+
+#### core-message
+- https://docs.raku.org/type/Exception#method_message
 
 #### core-min
 - https://docs.raku.org/type/Any#routine_min
@@ -700,6 +736,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 #### core-ords
 - https://docs.raku.org/type/Str#routine_ords
 
+#### core-orig
+- https://docs.raku.org/type/Match#method_orig
+
 ### core-P
 
 #### core-pair
@@ -727,6 +766,15 @@ https://docs.raku.org/type/Test#sub_bail-out
 #### core-pop
 - https://docs.raku.org/type/Array#method_pop
 
+#### core-pos
+- https://docs.raku.org/routine/pos
+
+#### core-postmatch
+- https://docs.raku.org/type/Match#method_postmatch
+
+#### core-prematch
+- https://docs.raku.org/type/Match#method_prematch
+
 #### core-prepend
 - https://docs.raku.org/type/Array#method_prepend
 
@@ -738,6 +786,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 #### core-proceed
 - https://docs.raku.org/language/control#proceed_and_succeed
+
+#### core-produce
+- https://docs.raku.org/routine/produce
 
 #### core-prompt
 - https://docs.raku.org/type/independent-routines#sub_prompt
@@ -765,6 +816,12 @@ https://docs.raku.org/type/Test#sub_bail-out
 #### core-repl
 - https://docs.raku.org/type/independent-routines#sub_repl
 
+#### core-resume
+- https://docs.raku.org/type/Exception#method_resume
+
+#### core-rethrow
+- https://docs.raku.org/type/Exception#method_rethrow
+
 #### core-return
 - https://docs.raku.org/language/control#return
 
@@ -788,6 +845,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 #### core-rotate
 - https://docs.raku.org/type/List#routine_rotate
+
+#### core-rotor
+- https://docs.raku.org/routine/rotor
 
 #### core-round
 - https://docs.raku.org/type/Cool#routine_round
@@ -826,6 +886,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 
 #### core-signal
 - https://docs.raku.org/routine/signal
+
+#### core-sink
+- https://docs.raku.org/routine/sink
 
 #### core-skip
 - https://docs.raku.org/type/Seq#method_skip
@@ -925,6 +988,9 @@ https://docs.raku.org/type/Test#sub_bail-out
 #### core-take-rw
 - https://docs.raku.org/type/Mu#routine_take-rw
 
+#### core-target
+- https://docs.raku.org/routine/target
+
 #### core-tc
 - https://docs.raku.org/type/Str#routine_tc
 
@@ -934,8 +1000,14 @@ https://docs.raku.org/type/Test#sub_bail-out
 #### core-temp
 - https://docs.raku.org/routine/temp
 
+#### core-throw
+- https://docs.raku.org/type/Exception#method_throw
+
 #### core-throws-like
 - https://docs.raku.org/type/Test#sub_throws-like
+
+#### core-to
+- https://docs.raku.org/routine/to
 
 #### core-todo
 - https://docs.raku.org/type/Test#sub_throws-like
@@ -1122,6 +1194,9 @@ Infix operators consisting of alphanumeric characters
 #### infix-eq
 - https://docs.raku.org/language/operators#infix_eq
 
+#### infix-eqv
+- https://docs.raku.org/language/operators#infix_eqv
+
 #### infix-ff
 - https://docs.raku.org/language/operators#infix_ff
 
@@ -1190,6 +1265,9 @@ Infix operators consisting of alphanumeric characters
 
 #### infix-X
 - https://docs.raku.org/language/operators#infix_X
+
+#### infix-xor
+- https://docs.raku.org/language/operators#infix_xor
 
 #### infix-xx
 - https://docs.raku.org/language/operators#infix_xx
