@@ -716,7 +716,7 @@ method slangify($localization, %hash) is export {
             my @parts = $string.split(/ \s* "|" \s* /);
             my $body := @parts > 1
               ?? RakuAST::Regex::Alternation.new(
-                   @parts.map({RakuAST::Regex::Literal.new($_)})
+                   |@parts.map({RakuAST::Regex::Literal.new($_)})
                  )
               !! RakuAST::Regex::Sequence.new(
                    RakuAST::Regex::Literal.new($string)
