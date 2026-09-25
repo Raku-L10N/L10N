@@ -4,7 +4,7 @@
   "specVersion": "1.6",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-09-25T17:42:02+00:00",
+    "timestamp": "2026-09-25T21:20:17+00:00",
     "lifecycles": [
       {
         "phase": "pre-build"
@@ -19,7 +19,7 @@
     "component": {
       "type": "library",
       "mime-type": "text/plain",
-      "bom-ref": "pkg:raku/zef:l10n/L10N@0.1.8",
+      "bom-ref": "pkg:raku/zef:l10n/L10N@0.1.9",
       "authors": [
         {
           "bom-ref": "ElizabethMattijsen",
@@ -29,7 +29,7 @@
       "publisher": "zef",
       "group": "zef:l10n",
       "name": "L10N",
-      "version": "0.1.8",
+      "version": "0.1.9",
       "description": "Support logic for official localizations of Raku",
       "scope": "required",
       "licenses": [
@@ -41,14 +41,14 @@
           }
         }
       ],
-      "purl": "pkg:raku/zef:l10n/L10N@0.1.8",
+      "purl": "pkg:raku/zef:l10n/L10N@0.1.9",
       "externalReferences": [
         {
           "url": "https://github.com/Raku-L10N/L10N",
           "type": "distribution"
         },
         {
-          "url": "https://raku.land/zef:l10n/L10N?v=0.1.8",
+          "url": "https://raku.land/zef:l10n/L10N?v=0.1.9",
           "type": "documentation"
         },
         {
@@ -60,7 +60,7 @@
           "type": "license"
         },
         {
-          "url": "https://github.com/Raku-L10N/L10N/archive/refs/tags/0.1.8.zip",
+          "url": "https://github.com/Raku-L10N/L10N/archive/refs/tags/0.1.9.zip",
           "type": "source-distribution"
         },
         {
@@ -236,7 +236,7 @@
       "type": "distribution"
     },
     {
-      "url": "https://raku.land/zef:l10n/L10N?v=0.1.8",
+      "url": "https://raku.land/zef:l10n/L10N?v=0.1.9",
       "type": "documentation"
     },
     {
@@ -248,7 +248,7 @@
       "type": "license"
     },
     {
-      "url": "https://github.com/Raku-L10N/L10N/archive/refs/tags/0.1.8.zip",
+      "url": "https://github.com/Raku-L10N/L10N/archive/refs/tags/0.1.9.zip",
       "type": "source-distribution"
     },
     {
