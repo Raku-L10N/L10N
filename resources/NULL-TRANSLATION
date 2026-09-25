@@ -668,7 +668,7 @@ named-merge     merge
 named-minute    minute
 named-mm        mm
 named-mode      mode
-named-modified  mode
+named-modified  modified
 named-month     month
 
 # KEY               TRANSLATION
