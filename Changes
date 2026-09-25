@@ -2,6 +2,10 @@ Revision history for L10N
 
 {{$NEXT}}
 
+0.1.10  2026-09-25T23:38:39+02:00
+    - Fix another problem in null-translations
+    - Add test to prevent problems in null-translations
+
 0.1.9  2026-09-25T23:19:43+02:00
     - Fix problem in null-translations, Ignacio Martinoli++
 

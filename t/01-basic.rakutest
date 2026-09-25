@@ -3,7 +3,11 @@ use L10N;
 
 my @localizations = L10N.localizations.grep(* ne "EN");
 
-plan 3 + @localizations;
+plan 4 + @localizations;
+
+is-deeply  L10N.read-hash.map({ .key unless .key.ends-with(.value) }),
+  (),
+  'no errors in null translation';
 
 ok @localizations,  'make sure we have any localizations';
 ok L10N.extensions, 'make sure we have any extensions';

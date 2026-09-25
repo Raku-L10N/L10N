@@ -271,7 +271,7 @@ core-inode        inode
 core-invert       invert
 core-IO           IO
 core-is           is
-core-is-absolute  is-approx
+core-is-absolute  is-absolute
 core-is-approx    is-approx
 core-is-deeply    is-deeply
 core-is-prime     is-prime
