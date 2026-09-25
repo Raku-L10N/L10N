@@ -256,21 +256,23 @@ my sub make-mapper2str(str $name, @operands) {
          );
 
     # Wrap the statements into a method
-    RakuAST::Method.new(
-      name      => RakuAST::Name.from-identifier($name),
-      signature => RakuAST::Signature.new(
-        parameters => (
-          RakuAST::Parameter.new(
-            type   => RakuAST::Type::Simple.new(
-              RakuAST::Name.from-identifier("str")
+    RakuAST::Statement::Expression.new(
+      expression => RakuAST::Method.new(
+        name      => RakuAST::Name.from-identifier($name),
+        signature => RakuAST::Signature.new(
+          parameters => (
+            RakuAST::Parameter.new(
+              type   => RakuAST::Type::Simple.new(
+                RakuAST::Name.from-identifier("str")
+              ),
+              target => RakuAST::ParameterTarget::Var.new(
+                :name<$key>
+              )
             ),
-            target => RakuAST::ParameterTarget::Var.new(
-              :name<$key>
-            )
-          ),
-        )
-      ),
-      body      => RakuAST::Blockoid.new($stmts)
+          )
+        ),
+        body      => RakuAST::Blockoid.new($stmts)
+      )
     )
 }
 

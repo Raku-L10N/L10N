@@ -304,7 +304,7 @@ taken over by the L<L10N::Complete|https://raku.land/zef:l10n/L10N::Complete>
 distribution, which will also install this distribution.
 
 The update methods were taken from the core C<RakuAST::L10N> module,
-which will be removed in the 2025.08 release of Rakudo.
+which was removed in the 2025.08 release of Rakudo.
 
 =head1 AUTHOR
 
@@ -312,7 +312,7 @@ Elizabeth Mattijsen <liz@raku.rocks>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2023, 2025 Raku Localization Team
+Copyright 2023, 2025, 2026 Raku Localization Team
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

@@ -3,17 +3,15 @@
   "authors": [
     "Elizabeth Mattijsen"
   ],
-  "build-depends": [
-  ],
   "depends": [
   ],
   "description": "Support logic for official localizations of Raku",
   "license": "Artistic-2.0",
   "name": "L10N",
-  "perl": "6.d",
   "provides": {
     "L10N": "lib/L10N.rakumod"
   },
+  "raku": "6.d",
   "resources": [
     "01-basic.rakutest",
     "Changes",
@@ -29,11 +27,13 @@
     "run-tests",
     "windows.yml"
   ],
-  "source-url": "https://github.com/Raku-L10N/L10N.git",
+  "support": {
+    "bugtracker": "https://github.com/Raku-L10N/L10N/issues",
+    "email": "l10n@raku.org",
+    "source": "https://github.com/Raku-L10N/L10N.git"
+  },
   "tags": [
     "LOCALIZATION"
-  ],
-  "test-depends": [
   ],
   "version": "0.1.7"
 }
