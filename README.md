@@ -234,7 +234,7 @@ translation-keys
 
 ```raku
 say L10N.translation-keys;   # (adverb-pc-delete adverb-pc-exists ...
-say +L10N.translation-keys;  # 643
+say +L10N.translation-keys;  # 721
 ```
 
 Returns an alphabetically sorted list of translation keys, or can be used to find out the number of translation keys available.
@@ -270,12 +270,19 @@ Takes these named arguments, with these default values:
 </tbody>
 </table>
 
+update-keys
+-----------
+
+    $ update-keys
+
+The `update-keys` script should be run `before` any changes will be made to the translations: it will ensure that all possible translation keys that are known, are updated in the translation file(s).
+
 update-localization
 -------------------
 
     $ update-localization
 
-The `update-localization` script should be run after any changes have been made to the translations
+The `update-localization` script should be run **after** any changes have been made to the translations in the translation file(s).
 
 HISTORY
 =======

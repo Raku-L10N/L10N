@@ -1,6 +1,8 @@
 Revision history for L10N
 
 {{$NEXT}}
+
+0.1.8  2026-09-25T19:41:31+02:00
     - Added *many* more items to be translated, thanks to
       habere-et-dispertire++ and m-dango++
     - Added "update-keys" script to make sure all possible
