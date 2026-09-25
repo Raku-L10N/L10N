@@ -135,7 +135,9 @@ constraint-where  where
 
 # KEY                  TRANSLATION
 core-abs               abs
+core-accessed          accessed
 core-actions           actions
+core-add               add
 core-all               all
 core-antipair          antipair
 core-antipairs         antipairs
@@ -163,6 +165,7 @@ core-batch     batch
 core-bless     bless
 
 # KEY              TRANSLATION
+core-cache         cache
 core-callframe     callframe
 core-callsame      callsame
 core-callwith      callwith
@@ -171,8 +174,10 @@ core-caps          caps
 core-cas           cas
 core-categorize    categorize
 core-ceiling       ceiling
+core-changed       changed
 core-chars         chars
 core-chdir         chdir
+core-child         child
 core-chmod         chmod
 core-chomp         chomp
 core-chop          chop
@@ -181,6 +186,7 @@ core-chr           chr
 core-chrs          chrs
 core-chunks        chunks
 core-classify      classify
+core-cleanup       cleanup
 core-clone         clone
 core-close         close
 core-cmp-ok        cmp-ok
@@ -191,30 +197,42 @@ core-conj          conj
 core-contains      contains
 core-cross         cross
 
-# KEY         TRANSLATION
-core-decode   decode
-core-deepmap  deepmap
-core-defined  defined
-core-diag     diag
-core-die      die
-core-dies-ok  dies-ok
-core-dir      dir
-core-does-ok  does-ok
-core-done     done
-core-duckmap  duckmap
+# KEY                  TRANSLATION
+core-day-of-week       day-of-week
+core-day-of-year       day-of-year
+core-daycount          daycount
+core-days-in-month     days-in-month
+core-days-in-year      days-in-year
+core-dd-mm-yyyy        dd-mm-yyyy
+core-decode            decode
+core-deepmap           deepmap
+core-defined           defined
+core-dev               dev
+core-devtype           devtype
+core-diag              diag
+core-die               die
+core-dies-ok           dies-ok
+core-dir               dir
+core-dir-with-entries  dir-with-entries
+core-does-ok           does-ok
+core-done              done
+core-duckmap           duckmap
 
 # KEY               TRANSLATION
 core-eager          eager
+core-earlier        earlier
 core-elems          elems
 core-emit           emit
 core-encode         encode
 core-end            end
 core-ends-with      ends-with
+core-enums          enums
 core-eval-dies-ok   eval-dies-ok
 core-eval-lives-ok  eval-lives-ok
 core-exit           exit
 core-exp            exp
 core-expmod         expmod
+core-extension      extension
 
 # KEY              TRANSLATION
 core-fail          fail
@@ -230,29 +248,37 @@ core-fmt           fmt
 core-from          from
 core-full-barrier  full-barrier
 
-# KEY      TRANSLATION
-core-get   get
-core-getc  getc
-core-gist  gist
-core-grep  grep
+# KEY           TRANSLATION
+core-get        get
+core-getc       getc
+core-gist       gist
+core-grab       grab
+core-grabpairs  grabpairs
+core-grep       grep
+core-group      group
 
 # KEY      TRANSLATION
 core-hash  hash
 core-head  head
 
-# KEY           TRANSLATION
-core-indent     indent
-core-index      index
-core-indices    indices
-core-indir      indir
-core-invert     invert
-core-is         is
-core-is-approx  is-approx
-core-is-deeply  is-deeply
-core-is-prime   is-prime
-core-isa-ok     isa-ok
-core-isnt       isnt
-core-item       item
+# KEY             TRANSLATION
+core-im           im
+core-indent       indent
+core-index        index
+core-indices      indices
+core-indir        indir
+core-inode        inode
+core-invert       invert
+core-IO           IO
+core-is           is
+core-is-absolute  is-approx
+core-is-approx    is-approx
+core-is-deeply    is-deeply
+core-is-prime     is-prime
+core-is-relative  is-relative
+core-isa-ok       isa-ok
+core-isnt         isnt
+core-item         item
 
 # KEY      TRANSLATION
 core-join  join
@@ -265,6 +291,7 @@ core-kv    kv
 # KEY          TRANSLATION
 core-last      last
 core-lastcall  lastcall
+core-later     later
 core-lc        lc
 core-like      like
 core-lines     lines
@@ -273,19 +300,20 @@ core-list      list
 core-lives-ok  lives-ok
 core-lsb       lsb
 
-# KEY        TRANSLATION
-core-made    made
-core-make    make
-core-map     map
-core-match   match
-core-max     max
-core-message message
-core-min     min
-core-minmax  minmax
-core-mix     mix
-core-mkdir   mkdir
-core-move    move
-core-msb     msb
+# KEY            TRANSLATION
+core-made        made
+core-make        make
+core-map         map
+core-match       match
+core-max         max
+core-message     message
+core-min         min
+core-minmax      minmax
+core-mix         mix
+core-mkdir       mkdir
+core-mm-dd-yyyy  mm-dd-yyyy
+core-move        move
+core-msb         msb
 
 # KEY            TRANSLATION
 core-new         new
@@ -309,14 +337,18 @@ core-orig  orig
 # KEY              TRANSLATION
 core-pair          pair
 core-pairs         pairs
+core-parent        parent
+core-parse         parse
 core-parse-base    parse-base
 core-pass          pass
+core-path          path
 core-permutations  permutations
 core-pick          pick
 core-plan          plan
 core-pop           pop
 core-pos           pos
 core-postmatch     postmatch
+core-pred          pred
 core-prematch      prematch
 core-prepend       prepend
 core-print         print
@@ -328,11 +360,15 @@ core-push          push
 core-put           put
 
 # KEY            TRANSLATION
+core-raku        raku
 core-rand        rand
+core-re          re
 core-redo        redo
 core-reduce      reduce
+core-relative    relative
 core-repeated    repeated
 core-repl        repl
+core-resolve     resolve
 core-resume      resume
 core-rethrow     rethrow
 core-return      return
@@ -380,11 +416,13 @@ core-srand        srand
 core-starts-with  starts-with
 core-subbuf       subbuf
 core-subbuf-rw    subbuf-rw
+core-subparse     subparse
 core-subst        subst
 core-substr       substr
 core-substr-eq    substr-eq
 core-substr-rw    substr-rw
 core-subtest      subtest
+core-succ         succ
 core-succeed      succeed
 core-sum          sum
 core-symlink      symlink
@@ -400,6 +438,7 @@ core-temp           temp
 core-throw          throw
 core-throws-like    throws-like
 core-to             to
+core-today          today
 core-todo           todo
 core-trans          trans
 core-trim           trim
@@ -423,16 +462,25 @@ core-unlink    unlink
 core-unpolar   unpolar
 core-unshift   unshift
 core-use-ok    use-ok
+core-user      user
 
 # KEY        TRANSLATION
 core-val     val
 core-value   value
 core-values  values
 
-# KEY          TRANSLATION
-core-warn      warn
-core-wordcase  wordcase
-core-words     words
+# KEY                  TRANSLATION
+core-warn              warn
+core-watch             watch
+core-week              week
+core-week-number       week-number
+core-week-year         week-year
+core-weekday-of-month  weekday-of-month
+core-wordcase          wordcase
+core-words             words
+
+# KEY            TRANSLATION
+core-yyyy-mm-dd  yyyy-mm-dd
 
 # KEY     TRANSLATION
 core-zip  zip
@@ -538,6 +586,7 @@ named-batch      batch
 named-bin        bin
 named-bleed      bleed
 named-broadcast  broadcast
+named-by         by
 
 # KEY             TRANSLATION
 named-catch       catch
@@ -551,6 +600,7 @@ named-continue    continue
 named-control     control
 named-count       count
 named-create      create
+named-created     created
 named-createonly  createonly
 named-cwd         cwd
 named-CWD         CWD
@@ -612,13 +662,14 @@ named-listen     listen
 named-localhost  localhost
 named-localport  localport
 
-# KEY         TRANSLATION
-named-match   match
-named-merge   merge
-named-minute  minute
-named-mm      mm
-named-mode    mode
-named-month   month
+# KEY           TRANSLATION
+named-match     match
+named-merge     merge
+named-minute    minute
+named-mm        mm
+named-mode      mode
+named-modified  mode
+named-month     month
 
 # KEY               TRANSLATION
 named-name          name
@@ -833,6 +884,7 @@ trait-is-looser                 looser
 trait-is-nodal                  nodal
 trait-is-pure                   pure
 trait-is-raw                    raw
+trait-is-required               required
 trait-is-rw                     rw
 trait-is-test-assertion         test-assertion
 trait-is-tighter                tighter

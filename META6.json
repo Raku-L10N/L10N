@@ -3,6 +3,8 @@
   "authors": [
     "Elizabeth Mattijsen"
   ],
+  "build-depends": [
+  ],
   "depends": [
   ],
   "description": "Support logic for official localizations of Raku",
@@ -27,6 +29,7 @@
     "run-tests",
     "windows.yml"
   ],
+  "source-url": "https://github.com/Raku-L10N/L10N.git",
   "support": {
     "bugtracker": "https://github.com/Raku-L10N/L10N/issues",
     "email": "l10n@raku.org",
@@ -34,6 +37,8 @@
   },
   "tags": [
     "LOCALIZATION"
+  ],
+  "test-depends": [
   ],
   "version": "0.1.7"
 }

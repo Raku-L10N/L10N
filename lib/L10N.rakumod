@@ -558,7 +558,7 @@ method missing-translations(IO(Str) $io) {
 
 #- write-hash ------------------------------------------------------------------
 # Write out the localization of the given hash to the given file (as IO object)
-method write-hash(IO::Path:D $io, %mapping) {
+method write-hash(IO::Path:D $io, %mapping, :$add-core) {
 
     # Return the group for the given key
     my %groups;
@@ -595,11 +595,22 @@ method write-hash(IO::Path:D $io, %mapping) {
         }
     }
 
+    # Need to add any (new) core keys as untranslated
+    if $add-core {
+        for self.read-hash {
+            my str $key = .key;
+            my %hash := group-hash($key);
+            %hash{"#$key"} := .value unless %hash{$key};
+        }
+    }
+
     # Update the groups from the given hash
     for %mapping {
-        my $key  := .key;
+        my str $key         = .key;
+        my str $comment-key = "#$key";
+
         my %hash := group-hash($key);
-        %hash{"#$key"}:delete;  # remove any untranslated
+        $key = $comment-key if %hash{$comment-key}:exists;
         %hash{$key} := .value;  # set as translated
     }
 

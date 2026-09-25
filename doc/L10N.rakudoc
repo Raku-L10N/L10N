@@ -247,7 +247,7 @@ not supported.
 
 =begin code :lang<raku>
 say L10N.translation-keys;   # (adverb-pc-delete adverb-pc-exists ...
-say +L10N.translation-keys;  # 643
+say +L10N.translation-keys;  # 721
 =end code
 
 Returns an alphabetically sorted list of translation keys, or can be used
@@ -287,14 +287,24 @@ argument       | default
 --localization | basename of the directory specified
 --year         | current year
 
+=head2 update-keys
+
+=begin output
+$ update-keys
+=end output
+
+The C<update-keys> script should be run C<before> any changes will be
+made to the translations: it will ensure that all possible translation
+keys that are known, are updated in the translation file(s).
+
 =head2 update-localization
 
 =begin output
 $ update-localization
 =end output
 
-The C<update-localization> script should be run after any changes have
-been made to the translations
+The C<update-localization> script should be run B<after> any changes have
+been made to the translations in the translation file(s).
 
 =head1 HISTORY
 

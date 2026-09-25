@@ -270,8 +270,15 @@ Sub/Method names that are part of the Raku core.
 #### core-abs
 - https://docs.raku.org/type/Cool#routine_abs
 
+#### core-accessed
+- https://docs.raku.org/type/IO/Path#method_accessed
+
 #### core-actions
 - https://docs.raku.org/type/Match#method_actions
+
+#### core-add
+- https://docs.raku.org/type/BagHash#method_add
+- https://docs.raku.org/type/IO/Path#method_add
 
 #### core-all
 - https://docs.raku.org/type/Any#method_all
@@ -350,6 +357,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 ### core-C
 
+#### core-cache
+- https://docs.raku.org/type/Any#method_cache
+
 #### core-callframe
 - https://docs.raku.org/type/CallFrame
 
@@ -374,12 +384,18 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-ceiling
 - https://docs.raku.org/type/Cool#routine_ceiling
 
+#### core-changed
+- https://docs.raku.org/type/IO/Path#method_changed
+
 #### core-chars
 - https://docs.raku.org/type/Str#routine_chars
 
 #### core-chdir
 - https://docs.raku.org/type/independent-routines#sub_chdir
 - https://docs.raku.org/type/IO/Path#method_chdir
+
+#### core-child
+- https://docs.raku.org/type/IO/Path#method_child
 
 #### core-chmod
 - https://docs.raku.org/type/IO/Path#method_chmod
@@ -404,6 +420,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-classify
 - https://docs.raku.org/type/Any#routine_classify
+
+#### core-cleanup
+- https://docs.raku.org/type/IO/Path#method_cleanup
 
 #### core-clone
 - https://docs.raku.org/routine/clone
@@ -435,6 +454,24 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 - https://docs.raku.org/type/List#routine_cross
 
 ### core-D
+
+#### core-day-of-week
+- https://docs.raku.org/type/Dateish#method_day-of-week
+
+#### core-day-of-year
+- https://docs.raku.org/type/Dateish#method_day-in-year
+
+#### core-daycount
+- https://docs.raku.org/type/Dateish#method_daycount
+
+#### core-days-in-month
+- https://docs.raku.org/type/Dateish#method_days-in-month
+
+#### core-days-in-year
+- https://docs.raku.org/type/Dateish#method_days-in-year
+
+#### core-dd-mm-yyyy
+- https://docs.raku.org/type/Dateish#method_dd-mm-yyyy
 
 #### core-decode
 - https://docs.raku.org/type/Blob#method_decode
@@ -471,6 +508,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-eager
 - https://docs.raku.org/routine/eager
 
+#### core-earlier
+- https://docs.raku.org/type/Dateish#method_earlier
+
 #### core-elems
 - https://docs.raku.org/type/Any#method_elems
 - https://docs.raku.org/type/List#routine_elems
@@ -502,6 +542,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-expmod
 - https://docs.raku.org/type/Int#routine_expmod
+
+#### core-extension
+- https://docs.raku.org/type/IO/Path#method_extension
 
 ### core-F
 
@@ -555,8 +598,21 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-gist
 - https://docs.raku.org/type/Mu#routine_gist
 
+#### core-grab
+- https://docs.raku.org/type/Setty#method_grab
+- https://docs.raku.org/type/Baggy#method_grab
+- https://docs.raku.org/type/Mixy#method_grab
+- https://docs.raku.org/type/Supply#method_grab
+
+#### core-grabpairs
+- https://docs.raku.org/type/Setty#method_grabpairs
+- https://docs.raku.org/type/Baggy#method_grabpairs
+
 #### core-grep
 - https://docs.raku.org/type/List#routine_grep
+
+#### core-group
+- https://docs.raku.org/type/IO/Path#method_group
 
 ### core-H
 
@@ -568,6 +624,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 - https://docs.raku.org/type/List#method_head
 
 ### core-I
+
+#### core-im
+- https://docs.raku.org/type/Complex#method_im
 
 #### core-indent
 - https://docs.raku.org/type/Str#method_indent
@@ -584,6 +643,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-invert
 - https://docs.raku.org/routine/invert
 
+#### core-IO
+- https://docs.raku.org/type/Cool#method_IO
+
 #### core-is
 - https://docs.raku.org/type/Test#sub_is
 
@@ -595,6 +657,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-is-prime
 - https://docs.raku.org/type/Int#routine_is-prime
+
+#### core-is-relative
+- https://docs.raku.org/type/IO/Path#method_is-relative
 
 #### core-isa-ok
 - https://docs.raku.org/type/Test#sub_isa-ok
@@ -630,6 +695,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-lastcall
 - https://docs.raku.org/type/independent-routines#sub_lastcall
+
+#### core-later
+- https://docs.raku.org/type/Dateish#method_later
 
 #### core-lc
 - https://docs.raku.org/type/Str#routine_lc
@@ -684,6 +752,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-mkdir
 - https://docs.raku.org/type/independent-routines#sub_mkdir
+
+#### core-mm-dd-yyyy
+- https://docs.raku.org/type/Dateish#method_mm-dd-yyyy
 
 #### core-move
 - https://docs.raku.org/type/IO/Path#routine_move
@@ -751,6 +822,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-pairs
 - https://docs.raku.org/type/Map#method_pairs
 
+#### core-parse
+- https://docs.raku.org/type/Grammar#method_parse
+
 #### core-parse-base
 - https://docs.raku.org/type/Str#routine_parse-base
 
@@ -774,6 +848,11 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-postmatch
 - https://docs.raku.org/type/Match#method_postmatch
+
+#### core-pred
+- https://docs.raku.org/type/Str#method_pred
+- https://docs.raku.org/type/IO/Path#method_pred
+- https://docs.raku.org/type/Date#method_pred
 
 #### core-prematch
 - https://docs.raku.org/type/Match#method_prematch
@@ -804,8 +883,14 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 ### core-R
 
+#### core-raku
+- https://docs.raku.org/type/Mu#method_raku
+
 #### core-rand
 - https://docs.raku.org/type/Real#routine_rand
+
+#### core-re
+- https://docs.raku.org/type/Complex#method_re
 
 #### core-redo
 - https://docs.raku.org/language/control#redo
@@ -813,11 +898,18 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-reduce
 - https://docs.raku.org/type/List#routine_reduce
 
+#### core-relative
+- https://docs.raku.org/type/IO/Path#method_relative
+
 #### core-repeated
 - https://docs.raku.org/type/Any#method_repeated
 
 #### core-repl
 - https://docs.raku.org/type/independent-routines#sub_repl
+
+#### core-resolve
+- https://docs.raku.org/type/IO/Path#method_resolve
+- https://docs.raku.org/type/CompUnit/Repository#method_resolve
 
 #### core-resume
 - https://docs.raku.org/type/Exception#method_resume
@@ -956,6 +1048,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-subbuf-rw
 - https://docs.raku.org/type/Blob#method_subbuf-rw
 
+#### core-subparse
+- https://docs.raku.org/type/Grammar#method_subparse
+
 #### core-subst
 - https://docs.raku.org/type/Str#method_subst
 
@@ -970,6 +1065,10 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-subtest
 - https://docs.raku.org/type/Test#sub_subtest
+
+#### core-succ
+- https://docs.raku.org/type/Str#method_succ
+- https://docs.raku.org/type/IO/Path#method_succ
 
 #### core-succeed
 - https://docs.raku.org/language/control#proceed_and_succeed
@@ -1011,6 +1110,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 
 #### core-to
 - https://docs.raku.org/routine/to
+
+#### core-today
+- https://docs.raku.org/type/Date#method_today
 
 #### core-todo
 - https://docs.raku.org/type/Test#sub_throws-like
@@ -1077,6 +1179,9 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-use-ok
 - https://docs.raku.org/type/Test#sub_use-ok
 
+#### core-user
+- https://docs.raku.org/type/IO/Path#method_user
+
 ### core-V
 
 #### core-val
@@ -1093,11 +1198,31 @@ https://docs.raku.org/type/atomicint#sub_atomic-dec-fetch
 #### core-warn
 - https://docs.raku.org/type/Exception#sub_warn
 
+#### core-watch
+- https://docs.raku.org/type/IO/Path#method_watch
+
+#### core-week
+- https://docs.raku.org/type/Dateish#method_week
+
+#### core-week-number
+- https://docs.raku.org/type/Dateish#method_week-number
+
+#### core-week-year
+- https://docs.raku.org/type/Dateish#method_week-year
+
+#### core-weekday-of-month
+- https://docs.raku.org/type/Dateish#method_weekday-of-month
+
 #### core-wordcase
 - https://docs.raku.org/type/Str#routine_wordcase
 
 #### core-words
 - https://docs.raku.org/type/Str#routine_words
+
+### core-Y
+
+#### core-yyyy-mm-dd
+- https://docs.raku.org/type/Dateish#method_yyyy-mm-dd
 
 ### core-Z
 

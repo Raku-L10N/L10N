@@ -1,0 +1,10 @@
+#!/usr/bin/env raku
+
+use L10N;
+
+my $extension := L10N.extension;
+for dir.grep(*.extension eq $extension) -> $io {
+    L10N.write-hash($io,L10N.read-hash($io), :add-core);
+}
+
+# vim: expandtab shiftwidth=4

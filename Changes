@@ -1,6 +1,10 @@
 Revision history for L10N
 
 {{$NEXT}}
+    - Added *many* more items to be translated, thanks to
+      habere-et-dispertire++ and m-dango++
+    - Added "update-keys" script to make sure all possible
+      translation keys are in the current translation file(s)
     - Allow for tighter RakuAST type checking
     - Modernize META
     - Update resources to latest situation
