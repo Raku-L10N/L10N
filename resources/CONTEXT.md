@@ -2,7 +2,7 @@
 As it is hard for translators to have a mental image of what the translation of a given item should be, this file contains a list of all of the translatable items with one or more URLs where that feature is being documented.
 
 ## adverb-pc
-Adverbs on post(circummfix) operators, e.g. `%hash<foo>:delete>`.
+Adverbs on post(circumfix) operators, e.g. `%hash<foo>:delete`.
 
 #### adverb-pc-delete
 - https://docs.raku.org/language/subscripts#:delete
